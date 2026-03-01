@@ -9,15 +9,15 @@ st.set_page_config(
 
 st.sidebar.title("Uttam Tiwari")
 st.sidebar.markdown("ML Engineer | GenAI Developer | AI Systems Builder")
-st.sidebar.markdown("[GitHub](https://github.com/Uttamxalpha)")
-st.sidebar.markdown("[LinkedIn](https://linkedin.com/in/uttam-tiwari)")
-st.sidebar.markdown("uttamt2006@gmail.com")
+st.sidebar.markdown("🔗 [GitHub](https://github.com/Uttamxalpha)")
+st.sidebar.markdown("🔗 [LinkedIn](https://linkedin.com/in/uttam-tiwari)")
+st.sidebar.markdown("📧 uttamt2006@gmail.com")
 
 resume_path = Path("assets/resume.pdf")
 if resume_path.exists():
     with open(resume_path, "rb") as f:
         st.sidebar.download_button(
-            label="Download Resume",
+            label="📄 Download Resume",
             data=f,
             file_name="Uttam_Tiwari_Resume.pdf",
             mime="application/pdf"
@@ -26,8 +26,8 @@ if resume_path.exists():
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st.title("Uttam Tiwari")
-    st.subheader("ML Engineer | GenAI Developer | AI Systems Builder")
+    st.title(" Uttam Tiwari")
+    st.subheader("Data Scientist | GenAI Developer | AI Systems Builder")
 
     st.markdown("""
 I build production-ready AI systems using LLMs, RAG pipelines, and scalable backend architectures.
@@ -36,8 +36,8 @@ Focused on Retrieval-Augmented Generation, Agentic AI, and intelligent document 
 """)
 
     st.markdown("""
-Indore, India  
-B.Tech CS & AI (2023–2027)  
+📍 Indore, India  
+🎓 B.Tech CS & AI (2023–2027)  
 Specialized in RAG, GenAI & Agentic AI Systems
 """)
 
@@ -48,7 +48,7 @@ with col2:
 
 st.divider()
 
-st.header("Projects")
+st.header(" Projects")
 
 col1, col2 = st.columns(2)
 
@@ -83,7 +83,7 @@ with col2:
 
 st.divider()
 
-st.header("Technical Skills")
+st.header(" Technical Skills")
 
 st.markdown("""
 Programming: Python, SQL, Java  
@@ -105,3 +105,12 @@ st.markdown("""
 Machine Learning Intern — Robotronix Tech Pvt. Ltd., Indore  
 Worked on real-world ML models, preprocessing pipelines, and evaluation workflows.
 """)
+
+st.divider()
+
+st.header("Ask From My Portfolio")
+
+question = st.text_input("Ask about my projects or skills")
+
+if question:
+    st.info("AI backend integration in progress. This section will connect to a RAG system.")
